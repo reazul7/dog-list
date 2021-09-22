@@ -30,7 +30,7 @@ const Dog = () => {
   }, []);
 
   return (
-    <main>
+    <main className="py-5">
       <section className="flex justify-center pt-2">
       <img
         src={dog.message}

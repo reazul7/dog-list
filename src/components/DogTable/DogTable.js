@@ -5,7 +5,7 @@ const DogTable = (props) => {
     props;
 
   return (
-    <div className="container">
+    <div className="container py-5">
       <table className="table text-center">
         <thead className="border-1 border-black">
           <tr>

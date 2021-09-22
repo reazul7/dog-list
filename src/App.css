@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+.footer-bg {
+  background: linear-gradient(rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 0.7)),
+    url(https://png.pngtree.com/thumb_back/fh260/back_pic/05/14/83/0659a8dc59ebcf2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
