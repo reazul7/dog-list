@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DogTable from "../DogTable/DogTable";
+import { AiFillLike, AiTwotoneDislike } from 'react-icons/ai';
 
 const Dog = () => {
   const [dog, setDog] = useState({});
@@ -29,18 +30,26 @@ const Dog = () => {
   }, []);
 
   return (
-    <div style={{ paddingTop: "20px" }}>
+    <main>
+      <section className="flex justify-center pt-2">
       <img
         src={dog.message}
         alt=""
-        style={{ height: "250px", width: "250px" }}
+        className=" rounded w-60 h-60 shadow-2xl"
       />
-      <br />
-      <div style={{ paddingTop: "5px" }}></div>
+      </section>
 
-      <button onClick={handleLike}>Like: {likeDog}</button>
+      <section className="flex justify-center py-3">
+        <button onClick={handleLike} className="flex border bg-gray-200 px-4 py-1 rounded text-green-600">Like <AiFillLike className="ml-1 mt-1"/> </button>
+        <span className="px-3"></span>
+        <button onClick={handleDisLike} className="flex border bg-gray-200 px-4 py-1 rounded text-red-600">Dislike <AiTwotoneDislike className="ml-1 mt-1"/> </button>
+      </section>
+      
+
+
+      <button className="flex" onClick={handleLike}>Like <AiFillLike/> {likeDog}</button>
       <span style={{ paddingLeft: "10px" }}></span>
-      <button onClick={handleDisLike}>Dislike: {disLikeDog}</button>
+      <button className="flex" onClick={handleDisLike}>Dislike <AiTwotoneDislike/> {disLikeDog}</button>
 
       <DogTable
         handleRemoveLike={handleRemoveLike}
@@ -49,7 +58,7 @@ const Dog = () => {
         likeDog={likeDog}
         disLikeDog={disLikeDog}
       />
-    </div>
+    </main>
   );
 };
 
