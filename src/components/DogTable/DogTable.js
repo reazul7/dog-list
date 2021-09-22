@@ -5,11 +5,11 @@ const DogTable = (props) => {
 
   return (
     <div>
-      <table class="table">
+      <table className="table text-center">
         <thead>
           <tr>
-            <th>Like</th>
-            <th>Dislike</th>
+            <th className="text-green-600">Like</th>
+            <th className="text-red-600">Dislike</th>
           </tr>
         </thead>
         

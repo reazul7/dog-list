@@ -40,17 +40,11 @@ const Dog = () => {
       </section>
 
       <section className="flex justify-center py-3">
-        <button onClick={handleLike} className="flex border bg-gray-200 px-4 py-1 rounded text-green-600">Like <AiFillLike className="ml-1 mt-1"/> </button>
+        <button onClick={handleLike} className="flex border-1 border-green-500 bg-gray-200 px-4 py-1 rounded text-green-600">Like <AiFillLike className="ml-1 mt-1"/> </button>
         <span className="px-3"></span>
-        <button onClick={handleDisLike} className="flex border bg-gray-200 px-4 py-1 rounded text-red-600">Dislike <AiTwotoneDislike className="ml-1 mt-1"/> </button>
+        <button onClick={handleDisLike} className="flex border-1 border-red-500 bg-gray-200 px-4 py-1 rounded text-red-600">Dislike <AiTwotoneDislike className="ml-1 mt-1"/> </button>
       </section>
       
-
-
-      <button className="flex" onClick={handleLike}>Like <AiFillLike/> {likeDog}</button>
-      <span style={{ paddingLeft: "10px" }}></span>
-      <button className="flex" onClick={handleDisLike}>Dislike <AiTwotoneDislike/> {disLikeDog}</button>
-
       <DogTable
         handleRemoveLike={handleRemoveLike}
         handleRemoveDisLike={handleRemoveDisLike}
