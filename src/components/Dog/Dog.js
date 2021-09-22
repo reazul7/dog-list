@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import DogTable from "../DogTable/DogTable";
 
 const Dog = () => {
   const [dog, setDog] = useState({});
@@ -29,7 +30,6 @@ const Dog = () => {
 
   return (
     <div style={{ paddingTop: "20px" }}>
-      {/* <p>dog: {dog.status}</p> */}
       <img
         src={dog.message}
         alt=""
@@ -42,54 +42,13 @@ const Dog = () => {
       <span style={{ paddingLeft: "10px" }}></span>
       <button onClick={handleDisLike}>Dislike: {disLikeDog}</button>
 
-
-      {/* table list */}
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Like</th>
-            <th>Dislike</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              {likeDog ? (
-                <div>
-                  <img
-                    src={dog.message}
-                    alt=""
-                    style={{ height: "100px", width: "100px" }}
-                  />
-                  <br />
-                  <button onClick={handleRemoveLike}>Remove from Like</button>
-                </div>
-              ) : (
-                ""
-              )}{" "}
-            </td>
-
-            <td>
-              {disLikeDog ? (
-                <div>
-                  <img
-                    src={dog.message}
-                    alt=""
-                    style={{ height: "100px", width: "100px" }}
-                  />
-                  <br />
-                  <button onClick={handleRemoveDisLike}>
-                    Remove from Dislike
-                  </button>
-                </div>
-              ) : (
-                ""
-              )}{" "}
-              <br />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <DogTable
+        handleRemoveLike={handleRemoveLike}
+        handleRemoveDisLike={handleRemoveDisLike}
+        dog={dog}
+        likeDog={likeDog}
+        disLikeDog={disLikeDog}
+      />
     </div>
   );
 };
