@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
         {/* Getting Started Area */}
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          <div className="text-xs uppercase text-black font-bold  font-medium mb-6">
+          <div className="text-md uppercase text-black font-bold  mb-6">
             Getting Started
           </div>
 
@@ -40,7 +40,7 @@ const Footer = () => {
 
         {/* Core Concepts Area */}
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          <div className="text-xs uppercase text-black font-bold  font-medium mb-6">
+          <div className="text-md uppercase text-black font-bold  mb-6">
             Core Concepts
           </div>
 
@@ -72,7 +72,7 @@ const Footer = () => {
 
         {/* Customization Area */}
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          <div className="text-xs uppercase text-black font-bold  font-medium mb-6">
+          <div className="text-md uppercase text-black font-bold  mb-6">
             Customization
           </div>
 
@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
 
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          <div className="text-xs uppercase text-black font-bold  font-medium mb-6">
+          <div className="text-md uppercase text-black font-bold  mb-6">
             Community
           </div>
 

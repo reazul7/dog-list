@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Home/Footer/Footer';
 import NavBar from '../Home/NavBar/NavBar';
 
 const AboutUS = () => {
@@ -9,6 +10,7 @@ const AboutUS = () => {
             <div className="flex justify-center py-2">
                 <img src="https://media2.giphy.com/media/ocuQpTqeFlDOP4fFJI/giphy.gif" alt="" />
             </div>
+            <Footer />
         </div>
     );
 };
